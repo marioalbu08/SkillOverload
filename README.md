@@ -1,10 +1,10 @@
 # SkillOverload
 
-**Do the instructions we give AI agents make them better at the work, or can they get in the way?**
+**Do more skills make an AI agent smarter, or can the instruction manual eventually get in its way?**
 
-Skills are meant to help an agent do a job well. They can explain a workflow, provide domain knowledge, or remind an agent about a tool it would not otherwise use. But every instruction also competes for the agent’s attention. A skill can be irrelevant to the current task, repeat what the agent already knows, conflict with another instruction, or push useful evidence farther away in a long prompt.
+Skills can teach an agent a workflow, add domain knowledge, or show it how to use a tool. That extra guidance can help. But it also takes up room in the context the agent must use to understand the task. If the instructions grow, repeat one another, conflict, or bury useful evidence, the agent may become less reliable. It might miss something it was already told, follow the wrong guidance, or make an unsupported claim.
 
-SkillOverload is an independent research project about that tradeoff. We want to understand **when added context earns its place, when it becomes overhead, and how to tell the difference with evidence**.
+That is the idea behind SkillOverload. We are investigating **when adding skills stops helping and starts doing harm**, and whether effects such as lost-in-the-middle behavior or unsupported answers appear under specific conditions. These are research questions, not conclusions: skills can also improve performance, and the effect may depend on the task, model, and how the agent loads its instructions.
 
 ## Why look at this?
 
