@@ -1,0 +1,8 @@
+# Keep local secrets and transient execution artifacts out of research releases.
+.env
+.env.*
+__pycache__/
+*.pyc
+.venv/
+scratch.txt
+
