@@ -1,0 +1,134 @@
+[
+  {
+    "id": "cedar-transfer",
+    "question": "For the current Cedar Transfer service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Cedar Transfer. Current API version: v3. Upload endpoint: POST /v3/transfer. Multipart upload field: transfer_pack. Maximum file size: 18 MiB."},
+      {"path": "access_policy.md", "content": "Cedar Transfer upload authentication: Authorization: Bearer <token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Cedar Transfer: POST /v1/upload, multipart field file, X-API-Key authentication, 4 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Cedar Transfer", "api_version": "v3", "upload_endpoint": "POST /v3/transfer", "multipart_field": "transfer_pack", "auth_scheme": "Authorization: Bearer <token>", "file_size_limit": "18 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "birch-ingest",
+    "question": "For the current Birch Ingest service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Birch Ingest. Current API version: v2. Upload endpoint: PUT /v2/assets/import. Multipart upload field: payload_file. Maximum file size: 24 MiB."},
+      {"path": "access_policy.md", "content": "Birch Ingest upload authentication: Authorization: Token <token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Birch Ingest: POST /v1/assets, multipart field file, Bearer token, 8 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Birch Ingest", "api_version": "v2", "upload_endpoint": "PUT /v2/assets/import", "multipart_field": "payload_file", "auth_scheme": "Authorization: Token <token>", "file_size_limit": "24 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "maple-vault",
+    "question": "For the current Maple Vault service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Maple Vault. Current API version: v4. Upload endpoint: POST /v4/vault/objects. Multipart upload field: object_blob. Maximum file size: 32 MiB."},
+      {"path": "access_policy.md", "content": "Maple Vault upload authentication: Authorization: Bearer <access token>."},
+      {"path": "archive.md", "content": "Archived v2 guide for Maple Vault: POST /v2/objects, multipart field data, Basic authentication, 10 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Maple Vault", "api_version": "v4", "upload_endpoint": "POST /v4/vault/objects", "multipart_field": "object_blob", "auth_scheme": "Authorization: Bearer <access token>", "file_size_limit": "32 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "willow-archive",
+    "question": "For the current Willow Archive service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Willow Archive. Current API version: v2. Upload endpoint: PATCH /v2/archive/ingest. Multipart upload field: archive_data. Maximum file size: 12 MiB."},
+      {"path": "access_policy.md", "content": "Willow Archive upload authentication: Authorization: Token <session token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Willow Archive: POST /v1/archive, multipart field file, X-API-Key authentication, 6 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Willow Archive", "api_version": "v2", "upload_endpoint": "PATCH /v2/archive/ingest", "multipart_field": "archive_data", "auth_scheme": "Authorization: Token <session token>", "file_size_limit": "12 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "aspen-bucket",
+    "question": "For the current Aspen Bucket service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Aspen Bucket. Current API version: v5. Upload endpoint: POST /v5/bucket/items. Multipart upload field: bucket_item. Maximum file size: 48 MiB."},
+      {"path": "access_policy.md", "content": "Aspen Bucket upload authentication: Authorization: Bearer <service token>."},
+      {"path": "archive.md", "content": "Archived v3 guide for Aspen Bucket: PUT /v3/items, multipart field upload, Authorization: Token, 16 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Aspen Bucket", "api_version": "v5", "upload_endpoint": "POST /v5/bucket/items", "multipart_field": "bucket_item", "auth_scheme": "Authorization: Bearer <service token>", "file_size_limit": "48 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "linden-catalog",
+    "question": "For the current Linden Catalog service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Linden Catalog. Current API version: v3. Upload endpoint: POST /v3/catalog/bulk-load. Multipart upload field: catalog_bundle. Maximum file size: 20 MiB."},
+      {"path": "access_policy.md", "content": "Linden Catalog upload authentication: Authorization: Token <catalog token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Linden Catalog: POST /v1/catalog, multipart field file, Basic authentication, 5 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Linden Catalog", "api_version": "v3", "upload_endpoint": "POST /v3/catalog/bulk-load", "multipart_field": "catalog_bundle", "auth_scheme": "Authorization: Token <catalog token>", "file_size_limit": "20 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "firn-media",
+    "question": "For the current Firn Media service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Firn Media. Current API version: v6. Upload endpoint: PUT /v6/media/objects/upload. Multipart upload field: media_object. Maximum file size: 64 MiB."},
+      {"path": "access_policy.md", "content": "Firn Media upload authentication: Authorization: Bearer <media token>."},
+      {"path": "archive.md", "content": "Archived v2 guide for Firn Media: POST /v2/media, multipart field file, X-API-Key, 12 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Firn Media", "api_version": "v6", "upload_endpoint": "PUT /v6/media/objects/upload", "multipart_field": "media_object", "auth_scheme": "Authorization: Bearer <media token>", "file_size_limit": "64 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "ember-ledger",
+    "question": "For the current Ember Ledger service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Ember Ledger. Current API version: v2. Upload endpoint: POST /v2/ledger/imports. Multipart upload field: ledger_snapshot. Maximum file size: 28 MiB."},
+      {"path": "access_policy.md", "content": "Ember Ledger upload authentication: Authorization: Token <ledger token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Ember Ledger: PUT /v1/import, multipart field snapshot, Bearer token, 8 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Ember Ledger", "api_version": "v2", "upload_endpoint": "POST /v2/ledger/imports", "multipart_field": "ledger_snapshot", "auth_scheme": "Authorization: Token <ledger token>", "file_size_limit": "28 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "sable-drive",
+    "question": "For the current Sable Drive service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Sable Drive. Current API version: v4. Upload endpoint: POST /v4/drive/files:upload. Multipart upload field: drive_file. Maximum file size: 40 MiB."},
+      {"path": "access_policy.md", "content": "Sable Drive upload authentication: Authorization: Bearer <drive token>."},
+      {"path": "archive.md", "content": "Archived v2 guide for Sable Drive: POST /v2/files, multipart field content, Basic authentication, 10 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Sable Drive", "api_version": "v4", "upload_endpoint": "POST /v4/drive/files:upload", "multipart_field": "drive_file", "auth_scheme": "Authorization: Bearer <drive token>", "file_size_limit": "40 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "quartz-registry",
+    "question": "For the current Quartz Registry service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Quartz Registry. Current API version: v3. Upload endpoint: PATCH /v3/registry/packages. Multipart upload field: package_archive. Maximum file size: 36 MiB."},
+      {"path": "access_policy.md", "content": "Quartz Registry upload authentication: Authorization: Token <registry token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Quartz Registry: POST /v1/packages, multipart field file, X-API-Key, 8 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Quartz Registry", "api_version": "v3", "upload_endpoint": "PATCH /v3/registry/packages", "multipart_field": "package_archive", "auth_scheme": "Authorization: Token <registry token>", "file_size_limit": "36 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "tamarack-store",
+    "question": "For the current Tamarack Store service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Tamarack Store. Current API version: v5. Upload endpoint: POST /v5/store/batches. Multipart upload field: batch_payload. Maximum file size: 52 MiB."},
+      {"path": "access_policy.md", "content": "Tamarack Store upload authentication: Authorization: Bearer <store token>."},
+      {"path": "archive.md", "content": "Archived v2 guide for Tamarack Store: PUT /v2/batches, multipart field data, Token authentication, 14 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Tamarack Store", "api_version": "v5", "upload_endpoint": "POST /v5/store/batches", "multipart_field": "batch_payload", "auth_scheme": "Authorization: Bearer <store token>", "file_size_limit": "52 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  },
+  {
+    "id": "alder-image",
+    "question": "For the current Alder Image service, return the service, API version, upload endpoint, multipart field, authentication scheme, and file-size limit. Use the current documents; cite a filename for each field.",
+    "files": [
+      {"path": "current_manifest.md", "content": "Service: Alder Image. Current API version: v2. Upload endpoint: PUT /v2/images/ingest. Multipart upload field: image_asset. Maximum file size: 22 MiB."},
+      {"path": "access_policy.md", "content": "Alder Image upload authentication: Authorization: Token <image token>."},
+      {"path": "archive.md", "content": "Archived v1 guide for Alder Image: POST /v1/images, multipart field image, Basic authentication, 6 MiB maximum. Historical reference only."}
+    ],
+    "answer": {"service": "Alder Image", "api_version": "v2", "upload_endpoint": "PUT /v2/images/ingest", "multipart_field": "image_asset", "auth_scheme": "Authorization: Token <image token>", "file_size_limit": "22 MiB"},
+    "citations": {"service": "current_manifest.md", "api_version": "current_manifest.md", "upload_endpoint": "current_manifest.md", "multipart_field": "current_manifest.md", "auth_scheme": "access_policy.md", "file_size_limit": "current_manifest.md"}
+  }
+]

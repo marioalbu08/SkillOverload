@@ -20,7 +20,9 @@ Run them separately and label their results separately.
 
 ## 3. Tasks
 
-Start with three bounded families:
+The included version 0.1 pilot covers one narrow family: closed-world fact extraction from fictional API documents, using 12 hand-written cases with current and archived values. It is a public development set. It is not held out from skill authors and is not suitable for confirmatory claims.
+
+The planned extension includes three bounded families:
 
 | Family | Example | Independent outcome check |
 | --- | --- | --- |
@@ -59,6 +61,8 @@ Do not call D neutral: filler can itself affect the model. Build several distrac
 **Conflict:** replace an instruction with a stale equivalent while preserving total structure. The authoritative current source and correct resolution rule remain available. G is an intentionally adverse intervention, not an estimate of naturally occurring stale-skill prevalence.
 
 **Compaction:** introduce a necessary fact early, then perform a fixed interaction sequence. Compare logged compaction with a matched policy preserving that fact. Fix the workload and distinguish pre-transformation errors from post-transformation errors. Unobservable compaction cannot support a mechanistic finding.
+
+The included pilot holds task text constant, but the longer skill adds prompt tokens before that text and therefore shifts evidence position. Its expansion comparison tests the combined intervention. A follow-up must vary skill length while also matching or independently controlling evidence positions before attributing any loss specifically to position or token count.
 
 Do not exhaustively cross every factor in the first pilot. Choose a small primary contrast, then run focused follow-ups.
 
@@ -107,7 +111,9 @@ Bootstrap matched task differences at the task level, or at the repository level
 
 Pass@k rewards success in at least one attempt; it is not the primary reliability metric. Report per-attempt success and repeated-run variability.
 
-A proposed first pilot is 12 tasks, three conditions A/B/C, three repeats, and one model-harness pair: **108 trajectories**. This is a feasibility pilot, not proof of general skill harm. Bound tokens, steps, and time per trajectory before launch. Pilot variability informs a subsequent power calculation, task sample size, and smallest practically meaningful effect. Do not reuse tuned pilot tasks as the confirmatory holdout.
+A larger feasibility pilot would use 12 tasks, three conditions A/B/C, three repeats, and one model-harness pair: **108 trajectories**. The included CLI defaults to one repeat (36 live calls), requires an explicit call cap above 36, and limits each invocation to 108 calls. This is not proof of general skill harm. Bound tokens, steps, and time per trajectory before launch. Pilot variability informs a subsequent power calculation, task sample size, and smallest practically meaningful effect. Do not reuse these public pilot tasks as the confirmatory holdout.
+
+The included runner sends each live trial as a fresh [OpenAI Responses API](https://developers.openai.com/api/docs/guides/structured-outputs) request, disables response storage, and asks for a strict JSON schema. Its common instruction and fictional task files are held constant while the optional developer skill message varies. Exact input and output token counts come from the returned usage fields. The deterministic fixture provider returns the answer key by design to check request ordering, report writing, and grading only. Fixture scores must never be included in model-performance tables.
 
 Publish null and positive effects. Correct for multiple confirmatory comparisons or explicitly limit inference to one primary comparison. Avoid selecting a harmful subgroup after seeing outcomes and presenting it as preregistered.
 
@@ -121,4 +127,3 @@ Publish null and positive effects. Correct for multiple confirmatory comparisons
 - F matching or exceeding B despite many installed skills weakens the claim that installed skill count inherently causes degradation.
 
 All claims must name the task population, model, harness, intervention, and uncertainty.
-

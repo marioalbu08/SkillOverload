@@ -11,6 +11,6 @@ Sources checked on October 3, 2026. A citation establishes only the stated scope
 | [SkillsBench 1.1 release](https://www.skillsbench.ai/blogs/skillsbench-1-1) | June 16, 2026 release note | Version context for the 87-task evaluation | That a live leaderboard is a frozen study |
 | [Agent Skills specification](https://agentskills.io/specification) | Living technical specification | Progressive disclosure and skill packaging | Every harness follows identical loading behavior |
 | [OpenAI, Rethinking skills and prompts for GPT-6 Astra](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra) | September 11, 2026 practitioner guidance | Practical concerns about descriptions and overprescriptive instructions | A controlled general effect size |
+| [OpenAI API, Structured model outputs](https://developers.openai.com/api/docs/guides/structured-outputs) | Living API documentation, checked October 3, 2026 | JSON Schema response formatting used to request machine-checkable answers | That schema-valid model answers are factually correct |
 
 For replication, archive permitted source versions or record retrieval dates and commit hashes for living specifications. The pinned arXiv versions should remain the reference for numerical paper claims even if later versions appear.
-
